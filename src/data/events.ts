@@ -23,6 +23,7 @@ export type Event = {
     image: string;
 };
 
+// Times are in Australian Central Standard Time (ACST)
 export const EVENTS: Event[] = [
     {
         title: 'Meet and Greet',
@@ -56,10 +57,6 @@ export const EVENTS: Event[] = [
         time: '6:00pm - 9:00pm',
         location: 'The National Wine Centre, Hickinbotham Hall',
         details: 'Connect with top companies and explore job opportunities in the tech industry!',
-        url: {
-            href: new URL('https://events.humanitix.com/computer-science-club-industry-night'),
-            text: 'Sign up here!',
-        },
         image: 'industry-night.jpg',
     },
     {
@@ -106,6 +103,97 @@ export const EVENTS: Event[] = [
         details:
             "We've got some special surprise guests flying over from Melbourne as well as $150 worth of prizes!! The competition is aimed at beginners, so it’s a perfect chance to get a taste of competitive programming. It’s a 1.5 hour comp with 6 beginner-level programming problems ICPC-style where teams of 1-3 earn more points by solving a problem faster and with fewer submissions. The competition will take place on Codeforces where you can use all popular languages: C++, C, Python, Java, Rust, Haskell, Javascript, etc. There will also be free food!!",
         image: 'beginner-competition.png',
+    },
+    {
+        title: 'Clubsland',
+        date: { year: 2024, month: 'AUG', day: 7, endTime: '15:00' },
+        time: '11:00am - 3:00pm',
+        location: 'Hub Central',
+        details:
+            "Missed us at O'Week? Well you're in luck, because we are back again for Clubsland! This is yet another chance to meet the committee and ask any questions you have about the club! So come along and have a chat. Find out why you should sign up to the CS Club and potentially make new friends!  See you there!",
+        image: 'clubsland.png',
+    },
+    {
+        title: 'Pandas Workshop',
+        date: { year: 2024, month: 'AUG', day: 13, endTime: '20:00' },
+        time: '5:00pm - 8:00pm',
+        location: 'Ingkarni Wardli B16',
+        details:
+            'Ready to dive into data analysis? Join us for the introductory Pandas Workshop! Learn the basics of data science and data analysis in this workshop, and discover how you can use these skills in machine learning. Perfect for beginners, this workshop will introduce you to the roadmap for your journey into artificial intelligence and data science.',
+        image: 'pandas-workshop.png',
+    },
+    {
+        title: 'Intro to CTF Workshop',
+        date: { year: 2024, month: 'AUG', day: 20, endTime: '19:30' },
+        time: '5:30pm - 7:30pm',
+        location: 'Ingkarni Wardli B16',
+        details:
+            "Whether you're a novice or a seasoned coder, this workshop is designed to equip you with the skills you need to excel in Capture The Flag competitions. We'll cover the essentials, from understanding challenges to decoding the toughest puzzles, so you can be ready for our upcoming DuckCTF!",
+        image: 'ctf-workshop.png',
+    },
+    {
+        title: 'DuckCTF',
+        date: { year: 2024, month: 'AUG', day: 29, endTime: '20:00' },
+        time: '5:30pm - 8:00pm',
+        location: 'Australian Cyber Collaboration Centre (ACCC)',
+        details:
+            'Join us for DuckCTF, our premier Capture The Flag competition designed to challenge and sharpen your cybersecurity skills. Form your team of 3 and be ready to solve complex problems while learning valuable new techniques. On-site spaces are limited, but contestants can also join remotely.',
+        image: 'duck-ctf.png',
+    },
+    {
+        title: 'Grad Mixer',
+        date: { year: 2024, month: 'SEP', day: 6, endTime: '21:00' },
+        time: '6:00pm - 9:00pm',
+        location: 'The Gallery, Level 2, 30 Waymouth St',
+        details:
+            'Join us for an evening of networking with students, alumni, and industry professionals in fields like software development, AI, and cybersecurity. Expand your network, share experiences, and explore new opportunities while enjoying light refreshments in a relaxed atmosphere.',
+        image: 'grad-mixer.png',
+    },
+    {
+        title: 'Data Driven Future',
+        date: { year: 2024, month: 'SEP', day: 11, endTime: '20:30' },
+        time: '6:30pm - 8:30pm',
+        location: 'Ingkarni Wardli 715',
+        details:
+            'Join us for "Data Driven Future" - An AI and Data Science Panel! Discover insights from top minds in AI and data science as they explore the future of technology, machine learning, and innovation. Whether you\'re curious about AI\'s impact on industries, new research, or real-world applications, this panel is for you!',
+        image: 'ai-panel.png',
+    },
+    {
+        title: 'Cybersecurity Panel: Hacking the Industry',
+        date: { year: 2024, month: 'OCT', day: 8, endTime: '20:30' },
+        time: '6:30pm - 8:30pm',
+        location: 'Ingkarni Wardli 715',
+        details:
+            'Join us for an exclusive panel featuring industry experts from cybersecurity, digital forensics, and reverse engineering! Dive deep into the world of cyber defense, learn about the latest trends, and gain insights from seasoned professionals.',
+        image: 'cyber-panel.png',
+    },
+    {
+        title: 'Annual General Meeting',
+        date: { year: 2024, month: 'OCT', day: 15, endTime: '21:00' },
+        time: '5:30pm - 9:00pm',
+        location: 'Scott Theatre',
+        details:
+            "The CS Club's Annual General Meeting is approaching! This is your chance to elect our new committee for 2025. Nominations are open until Friday 11th October at 23:59.",
+        url: {
+            href: new URL(
+                'https://docs.google.com/forms/d/e/1FAIpQLSd0nAouaPh8TRyz8pItF2bcLCm4Bi4_xDud6cw0HH7MnNLBZg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZF3D8zf2jET2YAJ0s50YyUz6-qFpTnoCRMS7NPErcPCRLIaM9qiQ_bNew_aem_D0My1hTxpvGf8y2bB4FOSQ&pli=1'
+            ),
+            text: 'Nominate yourself for the 2025 CS Club committee!',
+        },
+        image: 'agm.png',
+    },
+    {
+        title: 'Defence Connect',
+        date: { year: 2024, month: 'OCT', day: 18, endTime: '19:00' },
+        time: '5:30pm - 7:00pm',
+        location: 'TBC',
+        details:
+            "In collaboration, the Adelaide Uni Space Society, Engineering Society and Computer Science Club present to you another industry event. If you are interested in South Australia's growing Defence Industry and want to get involved and grow your network, this is the only event you need to be at!",
+        url: {
+            href: new URL('https://events.humanitix.com/defence-connnect-panel-uofa'),
+            text: 'Get your tickets!',
+        },
+        image: 'defence-connect.png',
     },
 ];
 
